@@ -147,10 +147,6 @@ This website is a glimpse into my world of innovation and exploration in Compute
         </div>
     </div>
     <!-- End #experience -->
-
-    <div class="education-image">
-		<img src="images/msoe_logo.png" width="150" height="150"/>
-	</div>
 	<h2 class="heading">Education</h2>
 	<div class="education-block">
 		<div class="education-content">
@@ -300,69 +296,23 @@ This website is a glimpse into my world of innovation and exploration in Compute
     <!-- End #skills -->
 
     <div id="contact">
-        <h2 class="heading">Contact</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/adrimanca12@gmail.com">
-                
-            </form>
-        </div>
-	
-        <!-- End #contact-form -->
+    <h2 class="heading">Contact</h2>
+    <div id="contact-form">
+        <form method="POST" action="https://formspree.io/adrimanca12@gmail.com">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
     </div>
-    <!-- End #contact -->
-     <section id="contact" class="contact sec-pad dynamicBg">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-          <span class="heading-sec__sub heading-sec__sub--lt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
-          </span>
-        </h2>
-        <div class="contact__form-container">
-          <form action="#" class="contact__form">
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="text"
-                class="contact__form-input"
-                name="name"
-                id="name"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
-              <input
-                required
-                placeholder="Enter Your Email"
-                type="text"
-                class="contact__form-input"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Message</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                class="contact__form-input"
-                placeholder="Enter Your Message"
-                name="message"
-                id="message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn--theme contact__btn">
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-    <footer>
+    <!-- End #contact-form -->
+</div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 copyright">
