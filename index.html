@@ -295,14 +295,10 @@ This website is a glimpse into my world of innovation and exploration in Compute
         </ul>
     </div>
     <!-- End #skills -->
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Form</title>
+    <title>Contact Section</title>
     <style>
-        /* Basic styling for the contact form */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -320,63 +316,28 @@ This website is a glimpse into my world of innovation and exploration in Compute
             margin-bottom: 20px;
         }
 
-        #contact-form {
-            width: 60%;
-            margin: 0 auto;
+        .contact-details {
+            text-align: left;
+            margin-top: 20px;
         }
 
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #45a049;
+        .contact-details p {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <div id="contact">
         <h2 class="heading">Contact</h2>
-        <div id="contact-form">
-            <form method="POST" action="mailto:adrimanca12@gmail.com" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="Your Name" required><br><br>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Your Email" required><br><br>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" placeholder="Your Message" rows="4" required></textarea><br><br>
-                
-                <input type="submit" value="Submit">
-            </form>
+        <div class="contact-details">
+            <p>Email: example@example.com</p>
+            <p>Phone: +123456789</p>
+            <p>Address: 123 Main Street, City, Country</p>
+            <!-- Add more contact details as needed -->
         </div>
-        <!-- End #contact-form -->
+        <!-- End .contact-details -->
     </div>
-</body>
-</html>
+    <!-- End #contact -->
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 copyright">
