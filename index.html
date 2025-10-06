@@ -5,13 +5,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
+    <title>Adrian Manchado - AI & ML Engineer</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/modern-styles.css" rel="stylesheet">
+    <link href="css/tabbed-layout.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,38 +21,61 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
     <!-- End #mobile-menu-toggle -->
-    <header>
+    <header class="tabbed-header">
         <div id="mobile-menu-close">
             <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
+        <div class="header-content">
+            <div class="logo">
+                <h3>AM</h3>
+            </div>
+            <nav class="tab-navigation">
+                <button class="tab-btn active" data-tab="home">
+                    <i class="fa fa-home"></i>
+                    <span>Home</span>
+                </button>
+                <button class="tab-btn" data-tab="about">
+                    <i class="fa fa-user"></i>
+                    <span>About</span>
+                </button>
+                <button class="tab-btn" data-tab="experience">
+                    <i class="fa fa-briefcase"></i>
+                    <span>Experience</span>
+                </button>
+                <button class="tab-btn" data-tab="education">
+                    <i class="fa fa-graduation-cap"></i>
+                    <span>Education</span>
+                </button>
+                <button class="tab-btn" data-tab="projects">
+                    <i class="fa fa-code"></i>
+                    <span>Projects</span>
+                </button>
+                <button class="tab-btn" data-tab="awards">
+                    <i class="fa fa-trophy"></i>
+                    <span>Awards</span>
+                </button>
+                <button class="tab-btn" data-tab="skills">
+                    <i class="fa fa-cogs"></i>
+                    <span>Skills</span>
+                </button>
+                <button class="tab-btn" data-tab="contact">
+                    <i class="fa fa-envelope"></i>
+                    <span>Contact</span>
+                </button>
+            </nav>
+        </div>
     </header>
     <!-- End header -->
 
+    <div class="tab-container">
+    
+    <!-- HOME TAB -->
+    <div class="tab-content active" id="home-tab">
     <div id="lead">
         <div id="lead-content">
             <h1>Adrian Manchado</h1>
-            <h2>Computer Science Student</h2>
-            <a href="Adrian Manchado Resume-FALL 2024.docx" class="btn-rounded-white">Download Resume</a>
+            <h2>Applied AI Engineer | Machine Learning Researcher | NCAA Athlete</h2>
+            <a href="Adrian Manchado Full Resume September 2025.docx" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -64,7 +89,11 @@
         <!-- End #lead-down -->
     </div>
     <!-- End #lead -->
+    </div>
+    <!-- End HOME TAB -->
 
+    <!-- ABOUT TAB -->
+    <div class="tab-content" id="about-tab">
     <div id="about">
     <div class="container">
         <div class="row">
@@ -83,15 +112,15 @@
                 </div>
                 <div class="col-md-12">
                     <p>
-                        "Hi there! I'm Adrian Manchado, a Computer Science and Mathematics enthusiast driven by a passion for problem-solving and technology.
-
-My journey began when I stumbled upon programming in high school, discovering the thrilling intersection of structured logic and creative solutions. This revelation led me to Milwaukee School of Engineering (MSOE), where I'm honing my skills and exploring the boundless possibilities of technology.
-
-Balancing academics with a commitment as an NCAA athlete, I've learned invaluable lessons in teamwork, leadership, and resilience. Growing up with a strong work ethic, I've cultivated essential interpersonal and communication skills through diverse experiences.
-
-My goal is simple: to merge my love for problem-solving with technology's potential for real-world impact. From optimizing workflows for non-profits to crafting predictive models, I'm dedicated to leveraging technology for positive change.
-
-This website is a glimpse into my world of innovation and exploration in Computer Science. Join me on this exciting journey where curiosity meets technology, shaping a better tomorrow."
+Hi! I'm Adrian Manchado, an Applied AI Engineer and Machine Learning researcher pursuing concurrent B.S. Computer Science and M.S. Machine Learning degrees at Milwaukee School of Engineering (MSOE) with a perfect 4.0 GPA.
+<br><br>
+As an Applied AI Intern at Direct Supply, I built Fabrics.AI—a solo-designed enterprise solution that saved 10,000+ hours/year for the Design Team, serving 20+ users with 40,000+ embedded fabrics using OpenAI, AWS, and Databricks. I've also developed IoT-integrated training platforms and led volunteer initiatives connecting 100+ interns with senior care facilities.
+<br><br>
+I'm passionate about causal reinforcement learning, computer vision, and NLP. As MSOE AI Club Research Mentor, I lead projects like our Machine Learning Video Analysis System for soccer statistics using YOLO, TensorFlow, and custom CNN models. I'm also researching causal reinforcement learning to improve credit assignment in decision-making systems.
+<br><br>
+Balancing 20 hours/week as NCAA Soccer Team Captain (NACC Champions 2024!) with 10 hours/week mentoring and full-time graduate coursework has taught me discipline, time management, and leadership. I'm a UIF Stanford member, Tau Beta Pi Secretary, and NVIDIA ROSIE Supercomputer Challenge Finalist.
+<br><br>
+My mission: leverage AI and machine learning to create real-world impact—from optimizing enterprise workflows to advancing reinforcement learning research. Let's build the future together!
                     </p>
                 </div>
             </div>
@@ -99,309 +128,308 @@ This website is a glimpse into my world of innovation and exploration in Compute
     </div>
 </div>
     <!-- End #about -->
+    </div>
+    <!-- End ABOUT TAB -->
 
+    <!-- EXPERIENCE TAB -->
+    <div class="tab-content" id="experience-tab">
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
 	    <div id="experience-timeline">
+	        <div data-date="January 2025 – Present">
+	            <h3>Direct Supply</h3>
+	            <h4>Applied AI Intern</h4>
+	            <p><strong>Fabrics.AI Platform:</strong> Solo-designed enterprise AI solution providing real-time fabric availability and pricing.</p>
+	            <ul>
+	                <li>Built React application on AWS with hourly data ingestion pipeline (S3) serving 20+ users and 40,000+ fabrics</li>
+	                <li>Implemented Selenium web scraping for automated image collection and OpenAI image embeddings for recommender system</li>
+	                <li>Leveraged ChatGPT Nano for fabric classification and created Databricks table architecture</li>
+	                <li><strong>Impact:</strong> Saved 10,000+ hours/year for Design Team, provided API for cross-platform fabric data access</li>
+	            </ul>
+	            <p><strong>Maintenance Staff Training Platform:</strong> IoT-integrated onboarding system for senior care facilities.</p>
+	            <ul>
+	                <li>Engineered React-based AWS application with interactive facility maps and real-time TELS API integration</li>
+	                <li>Deployed ESP32 IoT devices with Flask server for asset health monitoring and anomaly detection</li>
+	                <li>Connected sensor data to Fix.AI's RAG model for AI-driven troubleshooting guidance</li>
+	            </ul>
+	            <p><strong>Leadership:</strong> Intern Advisory Board Member - coordinated 5 volunteer events at 2 senior care facilities, bringing 40+ interns on-site.</p>
+	        </div>
 	        <div data-date="May 2024 – August 2024">
 	            <h3>New World Now</h3>
 	            <h4>Software Development Intern</h4>
-	            <p><strong>Objective:</strong> Refactored and improved an existing event attendance tracking app, enabling training authorization through QR codes and roster registration to ensure childcare provider compliance with training requirements.</p>
+	            <p><strong>Event Attendance Tracking App:</strong> Full-stack refactorization enabling QR code training authorization.</p>
 	            <ul>
-	                <li>Developed full-stack solutions by creating endpoints, updating frontend logic, and making database and API calls using Angular, C#, HTML, SQL, and Typescript, delivering a cutting-edge site.</li>
-	                <li>Designed the architecture of the app and established the connection with identity provider, handling user flow to ensure authorization after login/logout and proper route redirection.</li>
-	                <li>Designed 12 different sites using the same codebase to accommodate various clients, allowing for client branding by connecting with existing UX design.</li>
-	                <li>Collaborated in a team environment using the Scrum framework for client deadlines, sprint planning, work retrospection, and code review with documented processes for technology duplication.</li>
-	                <li>Initiated “Question of the Week” to foster networking and communication within the team.</li>
-	                <li>Presented the final product to clients nationwide, showcasing the app architecture in production.</li>
+	                <li>Developed endpoints, frontend logic, and database calls using Angular, C#, TypeScript, SQL - now in production</li>
+	                <li>Architected identity provider integration and designed 12 client-branded sites from single codebase</li>
+	                <li>Collaborated using Scrum framework with documented processes for team duplication</li>
+	                <li>Presented final product to nationwide clients - app now part of production catalog</li>
 	            </ul>
 	        </div>
-            <div data-date="May 2023 – August 2023">
-                <h3>Cardamomo Flamenco Madrid</h3>
-                <h4>Sales Agent</h4>
-                <p>
-		<li>
-			Utilized excellent oral and listening skills to engage customers in conversation, determine needs and requirements, and then applied persuasive communication to increase revenues                </li>
-                <li>
-                    	Developed strategies to optimize the customer experience and service of the brand.
-                </li>
-                <li>
-			Designed dynamic displays for products to increase overall revenue and specific product sales.                
-		</li>
-                </p>
-            </div>
-
-            <div data-date="February 2023 – May 2023">
-                <h3>Cardinal Stritch University</h3>
-                <h4>IT Help Desk Assistant</h4>
-                <p>
-		<li>
-			Provide technical assistance and support related to computer systems, hardware, or software to clients, end users, and the organization they work for.                
-		<li>
-			Respond to queries, run diagnostic programs, isolate problems, and determine and implement solutions.                </li>
-                <li>
-			Interact with customers by phone or in-person to resolve their computer problems related to software and hardware issues.		
-		</li>                
-		</p>
-            </div>
-
-            <div data-date="February 2023 – May 2023">
-                <h3>Cardinal Stritch University</h3>
-                <h4>Business Office Assistant</h4>
-                <p>
-                <li>
-			Filed and organized confidential information to improve the accessibility of files related to accounts and payments by students.                
-                </li>
-                <li>
-			Completed numerous complicated selection tasks associated with organization design that involved problem-solving and teamwork.		
-		</li>
-                </p>
-            </div>
+	        <div data-date="May 2022 – August 2023">
+	            <h3>Additional Professional Experience</h3>
+	            <h4>Various Roles</h4>
+	            <ul>
+	                <li><strong>Sales Agent</strong> - Cardamomo Flamenco, Madrid (May-Aug 2023, 40 hrs/week)</li>
+	                <li><strong>Industrial Manager</strong> - Juanjo SA (May-Aug 2022, 30 hrs/week)</li>
+	                <li><strong>IT Help Desk Assistant</strong> - Cardinal Stritch University (Feb-May 2023, 20 hrs/week)</li>
+	                <li><strong>Business Office Assistant</strong> - Cardinal Stritch University (Feb-May 2023, 20 hrs/week)</li>
+	            </ul>
+	        </div>
         </div>
     </div>
     <!-- End #experience -->
+    </div>
+    <!-- End EXPERIENCE TAB -->
+
+    <!-- EDUCATION TAB -->
+    <div class="tab-content" id="education-tab">
     <div id="education">
 	<h2 class="heading">Education</h2>
 	<div class="education-block">
-			<div class="education-content">
-				<div class="text-details">
-					<h3>Milwaukee School of Engineering</h3>
-					    <span class="education-date">August 2023 - May 2026</span>
-					    <h4>Bachelor of Science in Computer Science, Mathematics Minor</h4>
-					    <p>
-						<li>Clubs and Organizations: </li>
-						    <ul>
-							    <li>Men's Soccer Varsity Athleter</li>
-							    <li>Treasurer Competitive Computing Club </li>
-							    <li>MSOE AI Club Researcher and member</li>
-						    </ul>
-						<li>GPA: 4.0 </li>
-						<li>2nd Best University in the Midwest</li>
-					    </p>
-				</div>
-		</div>
+		<h3>Milwaukee School of Engineering (MSOE)</h3>
+		<span class="education-date">August 2023 - December 2026</span>
+		<h4>M.S. Machine Learning | Expected December 2026</h4>
+		<h4>B.S. Computer Science | Expected May 2026 | GPA: 4.0</h4>
+		<p>
+		    <strong>Leadership & Involvement:</strong>
+		    <ul>
+		        <li><strong>NCAA Soccer Team Captain</strong> - 20 hrs/week, NACC Champions 2024, NCAA Tournament Participant</li>
+		        <li><strong>AI Club Research Mentor</strong> - Leading computer vision and RL research projects (10 hrs/week)</li>
+		        <li><strong>UIF Stanford Member</strong> - Entrepreneurship focused (5 hrs/week)</li>
+		        <li><strong>Tau Beta Pi Secretary</strong> - Engineering Honor Society (3 hrs/week)</li>
+		        <li><strong>Former Treasurer</strong> - Competitive Programming Club (2024)</li>
+		    </ul>
+		    <strong>Honors:</strong> 6x High Honors Dean's List, Top University in the Midwest
+		</p>
 	</div>
         <!-- End .education-block -->
 	<div class="education-block">
-	            <h3>Cardinal Stritch University</h3>
-	            <span class="education-date">Aug 2022 - May 2023</span>
-	            <h4>Bachelor of Science in Computer Science, Mathematics Minor</h4>
-	            <p>
-	                <li>
-	                    Clubs and Organizations: Men's Soccer Varsity Athlete and Volunteer for events
-	                </li>
-	                <li>
-	                    GPA: 4.0
-	                </li>
-	                <li>
-	                    Dean's Honor's List 2x
-	                </li>
-	            </p>
+	    <h3>Cardinal Stritch University</h3>
+	    <span class="education-date">Aug 2022 - May 2023</span>
+	    <h4>Computer Science Coursework | GPA: 4.0</h4>
+	    <p>
+	        <li>NCAA Men's Soccer Varsity Athlete</li>
+	        <li>Dean's Honor List (2x)</li>
+	    </p>
 	</div>
         <!-- End .education-block -->
         <div class="education-block">
-            <h3>Colegio el Caton</h3>
+            <h3>Colegio el Caton, Spain</h3>
             <span class="education-date">Sept 2016 - May 2022</span>
-            <h4>Highschool Degree</h4>
+            <h4>High School Diploma | GPA: 3.83</h4>
             <p>
-                <li>
-                    Valedictorian of my promotion
-                </li>
-                <li>
-                    GPA: 3.83
-                </li>
-
+                <li><strong>Valedictorian</strong> - Top of graduating class</li>
             </p>
         </div>
         <!-- End .education-block -->
     </div>
     <!-- End #education -->
+    </div>
+    <!-- End EDUCATION TAB -->
 
+    <!-- PROJECTS TAB -->
+    <div class="tab-content" id="projects-tab">
     <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
+        <h2 class="heading">Research & Projects</h2>
         <div class="container">
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/HacksGiving Poster.png" width="250" height="350"/>
+                        <img src="images/RaidersImage.png" width="250" height="350"/>
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Autism Website Screening AI</h3>
-			    <li>
-			        Created a user-friendly interface for autism patients and families using React.
-			    </li>
-			    <li>
-			        Developed an embedded system to find best-fit resources based on patient profiles.
-			    </li>
-			    <li>
-			        Created a database with patient information and relevant resources in SQL.
-			    </li>
-			    <li>
-			        Built an API using FastAPI to facilitate testing and future improvements.
-			    </li>
-			    <li>
-			        Applied OpenAI (ChatGPT) to summarize patient information and match their needs.
-			    </li>
-			    <li>
-			        Secured data transmission between the front-end and the API through encryption.
-			    </li>
-			<p><strong>Result:</strong> A website that takes input from the user and provides the most convenient resource, improving customer satisfaction, and optimizing the flow of the Next-Step Clinic.   .</p>
-
-                        <a href="https://gitlab.com/harwoodl/hacksgiving-2023.git">View Project</a>
+                        <h3>Machine Learning Video Analysis System</h3>
+                        <p><strong>AI Club Research Project:</strong> Computer vision system for soccer game statistics tracking</p>
+			    <ul>
+			        <li>Utilized <strong>YOLO + OpenCV</strong> for player detection with K-means clustering for team assignment</li>
+			        <li>Built custom <strong>TensorFlow/Keras CNN</strong> detecting 12 field points with high precision</li>
+			        <li>Designed geometric algorithms for 2D field mapping and ball detection via frame normalization</li>
+			        <li>Generated labeled dataset with augmentation (shift, crop, zoom) for model training</li>
+			        <li>Tracks possession %, chances, attacking heatmaps automatically from video input</li>
+			    </ul>
+			    <p><strong>Result:</strong> Production system delivering actionable insights to coaches and players</p>
                     </div>
-                    <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
-		    <div class="project shadow-large">
-			<div class="project-image">
-			    <img src="images/PortfolioRaiders.png" width="250" height="350"/> <!-- Add an appropriate image -->
-			</div>
-			<div class="project-info">
-			    <h3>Practice Generator and Statistics Tracking</h3>
-				<li>Created a user-friendly interface using React for teammates and coaches.</li>
-				<li>Developed Python API to pass information between frontend and backend.</li>
-				<li>Utilized PostgreSQL database to store the data for statistics tracking and to generate practice teams.</li>
-				<li>Deployed website with AWS Amplify and Lambda to ensure accessibility and functionality for the team.</li>
-				<li>Implemented a login system to ensure only coaches and current players could update statistics.</li>
-			    <p><strong>Result:</strong> Successfully launched a fully functional website that supports daily practice planning, team creation, and performance tracking.</p>
-				<a href="https://raider-stats.com">View Project</a>
-
-			</div>
-		    </div>
+                
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/Screenshot 2024-01-08 145504.png" width="250" height="250"/>
+                        <img src="images/project.jpg" width="250" height="350"/>
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>File Reader </h3>
-                       <li>
-			Developed software program that could read a file and give back the occurrences of the words and the pair of words in different files			</li>
-			<li>
-			Utilized OOP and inheritance in order to create a software structure.   
-			</li>
-			<li>
-			Handled File I/O to read and write files.   
-			</li>
-			<li>
-			Utilized UML diagrams for the construction of the program   
-			</li>
-                        <a href="https://github.com/msoecsse-csc1110/lab13-manchado53.git">View Project</a>
+                        <h3>Causal Reinforcement Learning Research</h3>
+                        <p><strong>Graduate Research:</strong> Advancing credit assignment in sequential decision-making</p>
+			    <ul>
+			        <li>Investigating RL with <strong>causal reasoning</strong> using Structural Causal Models (SCMs)</li>
+			        <li>Developing <strong>counterfactual credit assignment (CCA)</strong> beyond temporal difference learning</li>
+			        <li>Exploring causal off-policy evaluation and counterfactual policy optimization</li>
+			        <li>Testing in gridworlds, bandits, and healthcare decision simulations</li>
+			        <li>Goal: Enhance interpretability and quantify causal impact of individual actions</li>
+			    </ul>
+			    <p><strong>Impact:</strong> Improving AI decision-making transparency and policy evaluation</p>
                     </div>
-                    <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
-		<div class="project shadow-large">
+
+                <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/Screenshot 2024-01-09 204240.png" width="250" height="250"/>
+                        <img src="images/HacksGiving Poster.png" width="250" height="350"/>
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Alien Invasion Game </h3>
-                       <li>
-			Resolved technical challenges and implemented creative solutions during the development process
-		       </li>
-			<li>
-			Applied concept in game development using Python and the library Pygame to bring the Alien Invasion game from concept to completion.   
-			</li>
-			<li>
-			Implemented innovative design elements, including unique alien characters, immersive environments, and intuitive user interfaces, enhancing the overall player experience and garnering positive user feedback.
-			</li>
-                        <a href="https://github.com/manchado53/AlienInvasion.git">View Project</a>
+                        <h3>Discovery World AI Chatbot</h3>
+                        <p><strong>MSOE Hackathon Winner:</strong> Multilingual AI exhibit guide (Team of 5)</p>
+			    <ul>
+			        <li>React frontend with <strong>FastAPI</strong> backend for real-time communication</li>
+			        <li>Integrated <strong>Llama</strong> for text generation, <strong>Whisper</strong> for speech-to-text</li>
+			        <li>OpenAI Text-to-Speech for audio responses with multilingual support</li>
+			        <li>Dynamic difficulty adjustment based on user selection</li>
+			    </ul>
+			    <p><strong>Result:</strong> Fully functioning multilingual chatbot enhancing museum visitor experience</p>
                     </div>
-                    <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
+
+		<div class="project shadow-large">
+		    <div class="project-image">
+		        <img src="images/PortfolioRaiders.png" width="250" height="350"/>
+		    </div>
+		    <div class="project-info">
+		        <h3>Soccer Practice Generator & Stats Tracker</h3>
+		        <p><strong>Live Production Website:</strong> Team of 6 | <a href="https://raider-stats.com" target="_blank">raider-stats.com</a></p>
+			<ul>
+			    <li>React + Python API + PostgreSQL full-stack architecture</li>
+			    <li>Deployed on <strong>AWS (Amplify + Lambda)</strong> with secure login system</li>
+			    <li>Generates practice teams and tracks player performance statistics</li>
+			    <li>Used daily by MSOE Men's Soccer Team coaches and players</li>
+			</ul>
+			<p><strong>Result:</strong> Production app supporting daily operations and performance tracking</p>
+		    </div>
+		</div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/HacksGiving Poster.png" width="250" height="250"/>
+                    </div>
+                    <div class="project-info">
+                        <h3>Autism Screening AI - Next-Step Clinic</h3>
+			<ul>
+			    <li>React interface with FastAPI backend and SQL database</li>
+			    <li>OpenAI integration for patient-resource matching with encrypted transmission</li>
+			    <li>Embedded system finding best-fit resources based on patient profiles</li>
+			</ul>
+			<p><strong>Result:</strong> Optimized clinic workflow and improved patient satisfaction</p>
+                        <a href="https://gitlab.com/harwoodl/hacksgiving-2023.git" target="_blank">View Code</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- End #projects -->
+    </div>
+    <!-- End PROJECTS TAB -->
 
+    <!-- AWARDS TAB -->
+    <div class="tab-content" id="awards-tab">
+    <div id="awards">
+        <h2 class="heading">Awards & Achievements</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="award-block">
+                        <h3>🏆 NVIDIA ROSIE Supercomputer Challenge - Finalist</h3>
+                        <p>Selected as finalist for advanced AI/ML research proposal using NVIDIA's supercomputing resources</p>
+                    </div>
+                    <div class="award-block">
+                        <h3>⚽ NACC Conference Champions 2024 & NCAA Tournament Participant</h3>
+                        <p>MSOE Men's Soccer - First championship in 10 years as Team Captain</p>
+                    </div>
+                    <div class="award-block">
+                        <h3>🎓 6x High Honors Dean's List</h3>
+                        <p>Maintained perfect 4.0 GPA while balancing 20 hrs/week NCAA athletics and leadership roles</p>
+                    </div>
+                    <div class="award-block">
+                        <h3>💻 4th & 5th Place - MICS Programming Competition</h3>
+                        <p>Midwest Instruction and Computing Symposium competitive programming achievements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #awards -->
+    </div>
+    <!-- End AWARDS TAB -->
+
+    <!-- SKILLS TAB -->
+    <div class="tab-content" id="skills-tab">
     <div id="skills">
-        <h2 class="heading">Skills</h2>
+        <h2 class="heading">Technical Skills</h2>
         <ul>
-      <li>Artificial Intelligence</li>
-	    <li>Python</li>
-	    <li>Pandas</li>
-	    <li>Angular</li>
-	    <li>HTML</li>
-	    <li>Git</li>
-	    <li>Microsoft Office</li>
-	    <li>Object-Oriented Programming</li>
-	    <li>PostgreSQL</li>
-	    <li>Typescript</li>
-	    <li>Spanish Fluency</li>
-	    <li>Data Mining</li>
-	    <li>Scrum</li>
-	    <li>C#</li>
-	    <li>C++</li>
-	    <li>Java & JavaFX</li>
-	    <li>Data Structures</li>
-	    <li>Math</li>
-	    <li>React</li>
-	    <li>Jupyter Notebook</li>
-	    <li>Functional Programming (FP)</li>
-
+            <li>TensorFlow</li>
+            <li>Keras</li>
+            <li>YOLO</li>
+            <li>OpenCV</li>
+            <li>PyTorch</li>
+            <li>Reinforcement Learning</li>
+            <li>Computer Vision</li>
+            <li>NLP</li>
+            <li>LangChain</li>
+            <li>RAG</li>
+            <li>CNN</li>
+            <li>LLM as Judge</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>Java</li>
+            <li>JavaScript/TypeScript</li>
+            <li>React</li>
+            <li>Angular</li>
+            <li>FastAPI</li>
+            <li>Node.js</li>
+            <li>Flask</li>
+            <li>AWS (S3, Lambda, Amplify)</li>
+            <li>Terraform</li>
+            <li>Databricks</li>
+            <li>Docker</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>Firebase</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Scikit-learn</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>Selenium</li>
+            <li>Git/GitHub/GitLab</li>
+            <li>Scrum/Agile</li>
+            <li>IoT (ESP32)</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Statistical Testing</li>
+            <li>Spanish Fluency</li>
         </ul>
     </div>
     <!-- End #skills -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contact Section</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+    </div>
+    <!-- End SKILLS TAB -->
 
-        #contact {
-            padding: 50px 0;
-            text-align: center;
-            background-color: #3498db;
-            color: white;
-        }
-
-        .heading {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        .contact-details {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .contact-details p {
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
+    <!-- CONTACT TAB -->
+    <div class="tab-content" id="contact-tab">
     <div id="contact">
-        <h2 class="heading">Contact</h2>
-        <div class="contact-details">
-	    <p>THANKS FOR VISITING MY WEBSITE!!! </p>
-	    <p>Send me an email or call me in order to start a new project, collaborations or job. I am currently open</p>
-            <p>Email: adrimanca12@gmail.com</p>
-            <p>Phone: 4142001559</p>
-            <!-- Add more contact details as needed -->
+        <h2>Get In Touch</h2>
+        <div id="contact-text">
+            <p>I'm actively seeking opportunities in Applied AI, Machine Learning, and Full-Stack Development!</p>
+            <p>Whether you're interested in research collaboration, internship opportunities, or just want to connect—I'd love to hear from you.</p>
         </div>
-        <!-- End .contact-details -->
+        <div class="contact-info">
+            <p><i class="fa fa-envelope"></i> <strong>Email:</strong> adrimanca12@gmail.com</p>
+            <p><i class="fa fa-phone"></i> <strong>Phone:</strong> (414) 200-1559</p>
+            <p><i class="fa fa-map-marker"></i> <strong>Location:</strong> Milwaukee, WI</p>
+        </div>
     </div>
     <!-- End #contact -->
-</body>
-</html>
+    
+    <footer>
+        <div class="container">
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; <span id="current-year">2024</span> Adrian Manchado
+                        Copyright &copy; <span id="current-year">2025</span> Adrian Manchado
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -430,9 +458,17 @@ This website is a glimpse into my world of innovation and exploration in Compute
         </div>
     </footer>
     <!-- End footer -->
+    
+    </div>
+    <!-- End CONTACT TAB -->
+    
+    </div>
+    <!-- End tab-container -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script src="js/tabbed-navigation.js"></script>
+    <script src="js/modern-animations.js"></script>
 </body>
 
 </html>
