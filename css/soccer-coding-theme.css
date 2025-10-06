@@ -1,0 +1,566 @@
+/* ===================================
+   SOCCER + CODING FUSION THEME
+   Adrian Manchado Portfolio - 2025
+   Combining Athletic Excellence with Technical Mastery
+   =================================== */
+
+:root {
+    /* Soccer Field Colors */
+    --field-green: #1a8754;
+    --field-dark: #0d5c36;
+    --field-light: #26a65b;
+    --grass-stripe-1: #1a8754;
+    --grass-stripe-2: #1e9d5f;
+    
+    /* Coding Colors */
+    --code-blue: #0066ff;
+    --code-purple: #7c3aed;
+    --code-cyan: #00d9ff;
+    --terminal-green: #00ff41;
+    --syntax-orange: #ff6b35;
+    
+    /* Fusion Gradients */
+    --soccer-code-gradient: linear-gradient(135deg, #1a8754 0%, #0066ff 50%, #7c3aed 100%);
+    --field-to-screen: linear-gradient(135deg, #0d5c36 0%, #1e3a8a 100%);
+    --athletic-tech: linear-gradient(135deg, #26a65b 0%, #00d9ff 100%);
+}
+
+/* === SOCCER FIELD PATTERN BACKGROUND === */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(
+            0deg,
+            var(--grass-stripe-1) 0px,
+            var(--grass-stripe-1) 60px,
+            var(--grass-stripe-2) 60px,
+            var(--grass-stripe-2) 120px
+        );
+    opacity: 0.03;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* === HEADER WITH SOCCER FIELD AESTHETIC === */
+.tabbed-header {
+    background: var(--soccer-code-gradient) !important;
+    border-bottom: 3px solid var(--terminal-green);
+    box-shadow: 0 4px 20px rgba(26, 135, 84, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Field lines pattern in header */
+.tabbed-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(90deg, transparent 49%, rgba(255,255,255,0.1) 49%, rgba(255,255,255,0.1) 51%, transparent 51%),
+        linear-gradient(0deg, transparent 49%, rgba(255,255,255,0.1) 49%, rgba(255,255,255,0.1) 51%, transparent 51%);
+    background-size: 100px 100px;
+    opacity: 0.3;
+}
+
+/* === LOGO WITH SOCCER BALL + CODE BRACKETS === */
+.logo h3 {
+    font-family: 'Fira Code', monospace !important;
+    position: relative;
+    display: inline-block;
+}
+
+.logo h3::before {
+    content: '⚽';
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    animation: spin-ball 3s linear infinite;
+}
+
+.logo h3::after {
+    content: '</>';
+    position: absolute;
+    right: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    color: var(--terminal-green);
+    font-family: 'Fira Code', monospace;
+}
+
+@keyframes spin-ball {
+    0%, 100% { transform: translateY(-50%) rotate(0deg); }
+    50% { transform: translateY(-50%) rotate(180deg); }
+}
+
+/* === TAB BUTTONS WITH SOCCER + CODE ICONS === */
+.tab-btn {
+    position: relative;
+    font-family: 'Fira Code', monospace;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--terminal-green);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.tab-btn.active::after {
+    transform: scaleX(1);
+}
+
+.tab-btn:hover {
+    border: 2px solid rgba(0, 255, 65, 0.5);
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+/* === HERO SECTION - SOCCER FIELD === */
+#lead {
+    background: var(--field-to-screen) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Soccer field markings */
+#lead::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 60%;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+/* Center circle */
+#lead::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* === ANIMATED CODE BRACKETS === */
+#lead-content h1::before {
+    content: '<';
+    color: var(--terminal-green);
+    margin-right: 15px;
+    font-family: 'Fira Code', monospace;
+    animation: blink 1.5s infinite;
+}
+
+#lead-content h1::after {
+    content: '/>';
+    color: var(--terminal-green);
+    margin-left: 15px;
+    font-family: 'Fira Code', monospace;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* === SUBTITLE WITH TERMINAL EFFECT === */
+#lead-content h2 {
+    font-family: 'Fira Code', monospace !important;
+    background: linear-gradient(90deg, 
+        var(--terminal-green) 0%,
+        var(--code-cyan) 50%,
+        var(--terminal-green) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+#lead-content h2::before {
+    content: '$ ';
+    color: var(--terminal-green);
+    -webkit-text-fill-color: var(--terminal-green);
+    margin-right: 10px;
+}
+
+/* === SOCCER BALL PARTICLES === */
+@keyframes float-soccer {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-30px) rotate(180deg);
+    }
+}
+
+.particle {
+    background: none !important;
+}
+
+.particle::before {
+    content: '⚽';
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+/* === EXPERIENCE CARDS - SOCCER JERSEY STYLE === */
+.vtimeline-content {
+    border-left: 4px solid var(--field-green) !important;
+    position: relative;
+    background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%) !important;
+}
+
+.vtimeline-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(26, 135, 84, 0.02) 10px,
+            rgba(26, 135, 84, 0.02) 20px
+        );
+    pointer-events: none;
+}
+
+.vtimeline-content h3 {
+    font-family: 'Fira Code', monospace !important;
+    color: var(--field-green) !important;
+}
+
+.vtimeline-content h3::before {
+    content: '{ ';
+    color: var(--code-purple);
+}
+
+.vtimeline-content h3::after {
+    content: ' }';
+    color: var(--code-purple);
+}
+
+/* === TIMELINE - SOCCER FIELD LINE === */
+#experience-timeline:before {
+    background: var(--soccer-code-gradient) !important;
+    width: 5px !important;
+    box-shadow: 0 0 10px rgba(26, 135, 84, 0.5);
+}
+
+.vtimeline-icon {
+    background: var(--field-green) !important;
+    border: 4px solid var(--terminal-green) !important;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.4);
+}
+
+.vtimeline-icon::before {
+    content: '⚽';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+}
+
+/* === PROJECT CARDS - CODE + SOCCER FUSION === */
+.project {
+    border: 2px solid var(--field-green) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--soccer-code-gradient);
+}
+
+.project-info h3 {
+    font-family: 'Fira Code', monospace !important;
+    color: var(--field-green) !important;
+}
+
+.project-info h3::before {
+    content: 'function ';
+    color: var(--code-purple);
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
+.project-info h3::after {
+    content: '() { }';
+    color: var(--code-blue);
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+/* === SKILLS TAGS - SOCCER JERSEY NUMBERS + CODE === */
+#skills li {
+    background: linear-gradient(135deg, var(--field-green) 0%, var(--code-blue) 100%) !important;
+    color: white !important;
+    font-family: 'Fira Code', monospace;
+    border: 2px solid var(--terminal-green);
+    position: relative;
+    font-weight: 700;
+}
+
+#skills li::before {
+    content: '#';
+    margin-right: 3px;
+    color: var(--terminal-green);
+}
+
+#skills li:hover {
+    transform: translateY(-5px) scale(1.1) rotate(-2deg);
+    box-shadow: 0 10px 30px rgba(26, 135, 84, 0.4);
+}
+
+/* === AWARDS - TROPHY + CODE ACHIEVEMENT === */
+.award-block {
+    border-left: 6px solid var(--field-green) !important;
+    background: linear-gradient(135deg, #ffffff 0%, #ecfdf5 100%) !important;
+    position: relative;
+}
+
+.award-block::before {
+    content: '🏆';
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    animation: trophy-shine 2s ease-in-out infinite;
+}
+
+@keyframes trophy-shine {
+    0%, 100% { filter: brightness(1); }
+    50% { filter: brightness(1.5) drop-shadow(0 0 10px gold); }
+}
+
+.award-block h3 {
+    font-family: 'Fira Code', monospace !important;
+}
+
+/* === EDUCATION CARDS - PLAYBOOK STYLE === */
+.education-block {
+    border: 3px solid var(--field-green) !important;
+    border-top: 6px solid var(--terminal-green) !important;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%) !important;
+    position: relative;
+}
+
+.education-block::before {
+    content: '📚⚽';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    opacity: 0.3;
+}
+
+.education-block h3 {
+    color: var(--field-green) !important;
+    font-family: 'Fira Code', monospace !important;
+}
+
+/* === CONTACT SECTION - TERMINAL STYLE === */
+#contact {
+    background: linear-gradient(135deg, #0d1117 0%, #161b22 100%) !important;
+    position: relative;
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 255, 65, 0.03) 2px,
+            rgba(0, 255, 65, 0.03) 4px
+        );
+    pointer-events: none;
+}
+
+#contact h2 {
+    font-family: 'Fira Code', monospace !important;
+    color: var(--terminal-green) !important;
+}
+
+#contact h2::before {
+    content: '> ';
+    color: var(--terminal-green);
+}
+
+.contact-info p {
+    font-family: 'Fira Code', monospace;
+    background: rgba(0, 255, 65, 0.1) !important;
+    border: 1px solid var(--terminal-green);
+}
+
+.contact-info p::before {
+    content: '$ ';
+    color: var(--terminal-green);
+    margin-right: 5px;
+}
+
+/* === SCROLLBAR - SOCCER FIELD THEME === */
+.tab-content::-webkit-scrollbar-thumb {
+    background: var(--soccer-code-gradient) !important;
+    border: 2px solid var(--terminal-green);
+}
+
+.tab-content::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, 
+        var(--grass-stripe-1) 0%,
+        var(--grass-stripe-2) 50%,
+        var(--grass-stripe-1) 100%
+    );
+}
+
+/* === FOOTER - SCOREBOARD STYLE === */
+footer {
+    background: linear-gradient(135deg, #0d5c36 0%, #1e3a8a 100%) !important;
+    color: white !important;
+    border-top: 3px solid var(--terminal-green);
+    font-family: 'Fira Code', monospace;
+}
+
+footer .copyright p {
+    color: var(--terminal-green) !important;
+}
+
+footer .social a {
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+footer .social a:hover {
+    color: var(--terminal-green) !important;
+    transform: translateY(-5px) scale(1.2);
+    text-shadow: 0 0 10px var(--terminal-green);
+}
+
+/* === SOCCER BALL CURSOR TRAIL === */
+@keyframes ball-trail {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* === CODE TYPING EFFECT === */
+.typing-effect {
+    font-family: 'Fira Code', monospace;
+    border-right: 2px solid var(--terminal-green);
+    animation: typing 3s steps(40) 1s 1 normal both,
+               blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--terminal-green); }
+}
+
+/* === RESPONSIVE ADJUSTMENTS === */
+@media (max-width: 768px) {
+    .logo h3::before,
+    .logo h3::after {
+        display: none;
+    }
+    
+    #lead-content h1::before,
+    #lead-content h1::after {
+        font-size: 0.5em;
+    }
+}
+
+/* === HOVER EFFECTS - SOCCER KICK === */
+.project:hover {
+    animation: kick 0.5s ease-in-out;
+}
+
+@keyframes kick {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-10px) rotate(-2deg); }
+    75% { transform: translateY(-5px) rotate(2deg); }
+}
+
+/* === TERMINAL CURSOR === */
+.terminal-cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: var(--terminal-green);
+    animation: blink 1s infinite;
+    margin-left: 5px;
+}
+
+/* === SOCCER + CODE BADGE === */
+.fusion-badge {
+    display: inline-block;
+    padding: 5px 15px;
+    background: var(--soccer-code-gradient);
+    color: white;
+    font-family: 'Fira Code', monospace;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(26, 135, 84, 0.3);
+}
+
+.fusion-badge::before {
+    content: '⚽ ';
+}
+
+.fusion-badge::after {
+    content: ' </>';
+}
